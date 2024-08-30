@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.expense-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.expense-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.expense-form .form-group {
+    margin-bottom: 15px;
+}
+
+.expense-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.expense-form input,
+.expense-form textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #e9ecef;
+}
+
+.expense-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.expense-form .name-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.expense-form .name-inputs input {
+    flex: 1;
+}
+
+.expense-form h2 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.expense-form .expenses-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.expense-form .expenses-list .form-group {
+    flex: 1 1 calc(25% - 10px);
+}
+
+.expenses-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust the gap between form groups */
+    max-width: 400px; /* Adjust as needed */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.submit{
+    margin-top: 20px;
+    color: white;
+    background-color: green;
+    width: 80px;
+    height: 30px;
+    text-align: center; /* Center text horizontally */
+    
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Ensures margin: 0 auto; works */
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="date"],
+input[type="text"],
+input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="date"] {
+    width: calc(100% - 2px); /* Adjust for border */
+}
+
+input[type="number"] {
+    width: calc(100% - 2px); /* Adjust for border */
+}
+
+/* Optional: Style for labels and form elements */

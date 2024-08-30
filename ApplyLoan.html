@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application</title>
+    <link rel="stylesheet" href="ApplyLoan.css">
+</head>
+<body>
+    <div class="container">
+        <div class="loan-application">
+            <h2>Loan Application</h2>
+            <form id="loanForm">
+                <div class="form-group">
+                    <label for="loan-type">Loan Type <span class="required">*</span></label>
+                    <input type="text" id="loan-type" placeholder="Enter The Loan type">
+                </div>
+                <div class="form-group">
+                    <label for="required-date">Required Date <span class="required">*</span></label>
+                    <input type="date" id="required-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="loan-amount">Loan Amount <span class="required">*</span></label>
+                    <input type="number" id="loan-amount" value="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="installment">Installment <span class="required">*</span></label>
+                    <input type="number" id="installment" value="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="remarks">Remarks</label>
+                    <input type="text" id="remarks">
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn save">Save</button>
+                    <button type="reset" class="btn refresh">Refresh</button>
+                    <button type="button" class="btn close">Close</button>
+                    <button type="button" class="btn history">My Request History</button>
+                </div>
+            </form>
+        </div>
+        <div class="loan-description">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loan Description</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="loanTableBody">
+                    <!-- Rows will be added here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="ApplyLoan.js"></script>
+</body>
+</html>

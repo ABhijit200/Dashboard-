@@ -1,0 +1,344 @@
+/* Basic styling for tabs */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #ccc;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.tabs .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    margin-right: 5px;
+}
+
+.tabs .tab.active {
+    background: #007bff;
+    color: #fff;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    flex: 0 0 150px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 8px 12px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.upload-btn {
+    background-color: #28a745;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.address-section {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.address-section h3 {
+    margin-top: 0;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    flex: 0 0 150px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.form-group input[type="checkbox"] {
+    flex: 0;
+    margin-right: 10px;
+}
+
+.form-group label[for="same-as-permanent"] {
+    flex: 1;
+    font-weight: normal;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.details-section {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.details-section h3 {
+    margin-top: 0;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    flex: 0 0 150px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+/* save and exit button */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.save {
+    background-color: #4CAF50; /* green background color */
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button.exit {
+    background-color: #2196F3; /* blue background color */
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* The family details */
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    /* border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+*/  } 
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.form-row label {
+    flex: 0 0 150px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.form-row input[type="text"], 
+.form-row input[type="number"], 
+.form-row input[type="date"], 
+.form-row select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.form-row input[type="checkbox"] {
+    margin-top: 10px;
+}
+.form-row .checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    
+}
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.form-row label {
+    flex: 0 0 150px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.form-row input[type="text"], 
+.form-row input[type="number"], 
+.form-row input[type="date"], 
+.form-row input[type="file"], 
+.form-row select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.form-row input[type="checkbox"] {
+    margin-top: 10px;
+}
+.form-row .checkbox-label {
+    display: flex;
+    align-items: center;
+}
+.form-row .file-upload {
+    display: flex;
+    align-items: center;
+}
+.form-row .file-upload input[type="file"] {
+    margin-right: 10px;
+}
+.form-row .file-upload button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.form-row .file-upload .delete-btn {
+    background-color: red;
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 5px;
+
+}
+.form-row .file-upload .upload-btn {
+    background-color: green;
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+/* Previous company details */
+
+#education-qualification-details h2{
+    color: black;
+}

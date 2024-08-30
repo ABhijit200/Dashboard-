@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Application</title>
+    <link rel="stylesheet" href="Leave.css">
+</head>
+<body>
+    <div class="container">
+        <center>
+        <h2 class="header">Leave Application</h2>
+        <form class="leave-form">
+            <div class="form-group">
+                <label for="leave-type">Leave type *</label>
+                <select id="leave-type" required>
+                    <option value="" disabled selected>-- Select Leave Type --</option>
+                    <option value="sick">Sick Leave</option>
+                    <option value="casual">Casual Leave</option>
+                    <option value="annual">Annual Leave</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="start-date">Start Date *</label>
+                <input type="date" id="start-date" required>
+                <label for="start-time">Start Time *</label>
+                <input type="time" id="start-time" required>
+            </div>
+            <div class="form-group">
+                <label for="end-date">End Date *</label>
+                <input type="date" id="end-date" required>
+                <label for="end-time">End Time *</label>
+                <input type="time" id="end-time" required>
+            </div>
+            <div class="form-group">
+                <label for="reason">Reason *</label>
+                <input type="text" id="reason" required>
+            </div>
+            <div class="form-group">
+                <label for="document">Document</label>
+                <input type="file" id="document">
+                <input type="checkbox" id="remove-document">
+                <div class="label">
+                    <label for="remove-document">Is Remove Document?</label>
+                </div>
+                
+            </div>
+            <div class="leave-balance">
+                <span>Leave Balance</span>
+                <span>PL: 0 | CL: 0 | SL: 0 | Coff: 0 | CC: 0 | HL: 0</span>
+            </div>
+            <div class="buttons">
+                <button type="button" id="save">Save</button>
+                <button type="button" id="refresh">Refresh</button>
+                <button type="button" id="close">Close</button>
+                <button type="button" id="request-history">My Request History</button>
+            </div>
+        </form>
+    </center>
+        <div class="request-history">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Leave Description</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2">Data Not Found.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="Leave.js"></script>
+</body>
+</html>

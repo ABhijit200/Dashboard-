@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title>Saffo Tech SmartRoll</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://www.saffotech.com/public/uploads/logo.jpg" alt="Saffo Tech Logo">
+        </div>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
+                class="icn menuicn" id="menuicn" alt="menu-icon">
+        </div>
+
+        <div class="searchbar">
+            <input type="text" placeholder="Search" >
+            <div class="searchbtn">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
+                    class="icn srchicn" alt="search-icon">
+            </div>
+        </div>
+
+
+        <div class="message">
+          
+            <div class="dp">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+                    class="dpicn" alt="dp">
+            </div>
+        </div>
+
+    </header>
+
+    <div class="main-container">
+        <div class="navcontainer">
+            <nav class="nav">
+                <div class="nav-upper-options">
+                    <div class="nav-option option1" onclick="navigateTo('dashboard')">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png"
+                            class="nav-img" alt="dashboard">
+
+                        <h3 class="h3"> Dashboard</h3>
+                    </div>
+
+                    <div class="option2 nav-option" onclick="navigateTo('Profile')">
+                        <img src="https://i.pinimg.com/564x/74/bf/94/74bf9412b7f24c454b233ca174b972a3.jpg"
+                            class="nav-img" alt="articles">
+                        <h3 class="h3" tabindex="-1">Profile</h3>
+                    </div>
+
+                 
+
+                    <div class="option2 nav-option" onclick="navigateTo('InOut Time')">
+                        <img src="https://i.pinimg.com/736x/b6/ed/7a/b6ed7aeaf4fed1e325df8ef08f318ee4.jpg"
+                            class="nav-img" alt="articles">
+                        <h3 class="h3" tabindex="-1">InOut Time</h3>
+                    </div>
+
+                    <div class="nav-option option3" onclick="navigateTo('Apply Loan')">
+                        <img src="data:image/png;base64,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"
+                            class="nav-img" alt="report">
+                        <h3 class="h3"> Apply Loan</h3>
+                    </div>
+
+                    <div class="nav-option option4" onclick="navigateTo('Reimbursement')">
+                        <img src="https://t3.ftcdn.net/jpg/01/94/32/76/360_F_194327615_iJOB5l9djRD5tb6ZZRHWcxjnozN7YTf7.jpg"
+                            class="nav-img" alt="institution">
+                        <h3 class="h3"> Reimbursement</h3>
+                    </div>
+
+                    <div class="nav-option option5" onclick="navigateTo('Query')">
+                        <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/query-3561415-2979488.png"
+                            class="nav-img" alt="blog">
+                        <h3 class="h3"> Query</h3>
+                    </div>
+
+
+
+                    <div class="nav-option option6" onclick="navigateTo('Income Tax')">
+                        <img src="https://png.pngtree.com/png-vector/20190514/ourmid/pngtree-tax-file-format-icon-design-png-image_1040885.jpg"
+                            class="nav-img" alt="settings">
+                        <h3 class="h3"> Income Tax</h3>
+                    </div>
+
+                    <div class="nav-option option6" onclick="navigateTo('Off-Boarding')">
+                        <img src="https://static.vecteezy.com/system/resources/previews/014/669/411/original/offboarding-line-icon-vector.jpg"
+                            class="nav-img" alt="settings">
+                        <h3 class="h3"> Off-Boarding</h3>
+                    </div>
+
+                    <div class="nav-option option6" onclick="navigateTo('Leave')">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPPI42JrlNxWHRCPSuS5WkGP_3Y5NYTPG7YOWb4Roxk_o9NGJ12tiHWqFFOm2y_-KsRaY&usqp=CAU"
+                            class="nav-img" alt="settings">
+                        <h3 class="h3"> Leave</h3>
+                    </div>
+
+                    <div class="nav-option logout" onclick="navigateTo('Logout')">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
+                            class="nav-img" alt="logout">
+                        <h3 class="h3">Logout</h3>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+
+            <div class="searchbar2">
+                <input type="text" name="" id="" placeholder="Search">
+                <div class="searchbtn">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
+                        class="icn srchicn" alt="search-button">
+                </div>
+            </div>
+
+
+            <script src="same.js"></script>
+            <script src="index.js"></script>
+</body>
+
+</html>

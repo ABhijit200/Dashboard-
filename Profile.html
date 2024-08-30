@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details Form</title>
+    <link rel="stylesheet" href="Profile.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="title">Employee Self Entry</span>
+            <div class="buttons">
+                <button class="save">Save</button>
+                <button class="exit">Exit</button>
+            </div>
+        </div>
+        <div class="tabs">
+            <button class="tab active" data-tab="my-details">My details</button>
+            <button class="tab" data-tab="family-details">Family Details</button>
+            <button class="tab" data-tab="previous-company-details">Previous Company Details</button>
+            <button class="tab" data-tab="education-qualification-details">Education Qualification Details</button>
+            <button class="tab" data-tab="attach-documents">Attach Documents</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="tab-content" id="my-details">
+           
+            <form>
+                <h2>Personal Details</h2>
+            <form>
+                <div class="form-group">
+                    <label for="upload-photo">Upload Photo</label>
+                    <input type="file" id="upload-photo">
+                    <button type="button" class="btn delete-btn">Delete</button>
+                    <button type="button" class="btn upload-btn">Upload</button>
+                </div>
+                <div class="form-group">
+                    <label for="father-name">Father Name</label>
+                    <input type="text" id="father-name" placeholder="Father Name">
+                </div>
+                <div class="form-group">
+                    <label for="date-of-birth">Date Of Birth</label>
+                    <input type="date" id="date-of-birth">
+                </div>
+                <div class="form-group">
+                    <label for="spouse-name">Spouse Name</label>
+                    <input type="text" id="spouse-name" placeholder="Spouse Name">
+                </div>
+                <div class="form-group">
+                    <label for="nationality">Nationality</label>
+                    <select id="nationality">
+                        <option value="">Select</option>
+                        <option value="AF">Afghanistan</option>
+                        <option value="AL">Albania</option>
+                        <option value="DZ">Algeria</option>
+                        <option value="AS">American Samoa</option>
+                        <option value="AD">Andorra</option>
+                        <option value="AO">Angola</option>
+                        <option value="AI">Anguilla</option>
+                        <option value="AQ">Antarctica</option>
+                        <option value="AG">Antigua and Barbuda</option>
+                        <option value="AR">Argentina</option>
+                        <option value="AM">Armenia</option>
+                        <option value="AW">Aruba</option>
+                        <option value="AU">Australia</option>
+                        <option value="AT">Austria</option>
+                        <option value="AZ">Azerbaijan</option>
+                        <option value="BS">Bahamas</option>
+                        <option value="BH">Bahrain</option>
+                        <option value="BD">Bangladesh</option>
+                        <option value="BB">Barbados</option>
+                        <option value="BY">Belarus</option>
+                        <option value="BE">Belgium</option>
+                        <option value="BZ">Belize</option>
+                        <option value="BJ">Benin</option>
+                        <option value="BM">Bermuda</option>
+                        <option value="BT">Bhutan</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BA">Bosnia and Herzegovina</option>
+                        <option value="BW">Botswana</option>
+                        <option value="BR">Brazil</option>
+                        <option value="BN">Brunei</option>
+                        <option value="BG">Bulgaria</option>
+                        <option value="BF">Burkina Faso</option>
+                        <option value="BI">Burundi</option>
+                        <option value="CV">Cabo Verde</option>
+                        <option value="KH">Cambodia</option>
+                        <option value="CM">Cameroon</option>
+                        <option value="CA">Canada</option>
+                        <option value="KY">Cayman Islands</option>
+                        <option value="CF">Central African Republic</option>
+                        <option value="TD">Chad</option>
+                        <option value="CL">Chile</option>
+                        <option value="CN">China</option>
+                        <option value="CO">Colombia</option>
+                        <option value="KM">Comoros</option>
+                        <option value="CG">Congo</option>
+                        <option value="CR">Costa Rica</option>
+                        <option value="HR">Croatia</option>
+                        <option value="CU">Cuba</option>
+                        <option value="CY">Cyprus</option>
+                        <option value="CZ">Czech Republic</option>
+                        <option value="DK">Denmark</option>
+                        <option value="DJ">Djibouti</option>
+                        <option value="DM">Dominica</option>
+                        <option value="DO">Dominican Republic</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="EG">Egypt</option>
+                        <option value="SV">El Salvador</option>
+                        <option value="GQ">Equatorial Guinea</option>
+                        <option value="ER">Eritrea</option>
+                        <option value="EE">Estonia</option>
+                        <option value="ET">Ethiopia</option>
+                        <option value="FJ">Fiji</option>
+                        <option value="FI">Finland</option>
+                        <option value="FR">France</option>
+                        <option value="GA">Gabon</option>
+                        <option value="GM">Gambia</option>
+                        <option value="GE">Georgia</option>
+                        <option value="DE">Germany</option>
+                        <option value="GH">Ghana</option>
+                        <option value="GR">Greece</option>
+                        <option value="GL">Greenland</option>
+                        <option value="GD">Grenada</option>
+                        <option value="GU">Guam</option>
+                        <option value="GT">Guatemala</option>
+                        <option value="GN">Guinea</option>
+                        <option value="GW">Guinea-Bissau</option>
+                        <option value="GY">Guyana</option>
+                        <option value="HT">Haiti</option>
+                        <option value="HN">Honduras</option>
+                        <option value="HK">Hong Kong</option>
+                        <option value="HU">Hungary</option>
+                        <option value="IS">Iceland</option>
+                        <option value="IN">India</option>
+                        <option value="ID">Indonesia</option>
+                        <option value="IR">Iran</option>
+                        <option value="IQ">Iraq</option>
+                        <option value="IE">Ireland</option>
+                        <option value="IL">Israel</option>
+                        <option value="IT">Italy</option>
+                        <option value="JM">Jamaica</option>
+                        <option value="JP">Japan</option>
+                        <option value="JO">Jordan</option>
+                        <option value="KZ">Kazakhstan</option>
+                        <option value="KE">Kenya</option>
+                        <option value="KI">Kiribati</option>
+                        <option value="KP">Korea (North)</option>
+                        <option value="KR">Korea (South)</option>
+                        <option value="KW">Kuwait</option>
+                        <option value="KG">Kyrgyzstan</option>
+                        <option value="LA">Laos</option>
+                        <option value="LV">Latvia</option>
+                        <option value="LB">Lebanon</option>
+                        <option value="LS">Lesotho</option>
+                        <option value="LR">Liberia</option>
+                        <option value="LY">Libya</option>
+                        <option value="LI">Liechtenstein</option>
+                        <option value="LT">Lithuania</option>
+                        <option value="LU">Luxembourg</option>
+                        <option value="MO">Macau</option>
+                        <option value="MK">Macedonia</option>
+                        <option value="MG">Madagascar</option>
+                        <option value="MW">Malawi</option>
+                        <option value="MY">Malaysia</option>
+                        <option value="MV">Maldives</option>
+                        <option value="ML">Mali</option>
+                        <option value="MT">Malta</option>
+                        <option value="MH">Marshall Islands</option>
+                        <option value="MR">Mauritania</option>
+                        <option value="MU">Mauritius</option>
+                        <option value="MX">Mexico</option>
+                        <option value="FM">Micronesia</option>
+                        <option value="MD">Moldova</option>
+                        <option value="MC">Monaco</option>
+                        <option value="MN">Mongolia</option>
+                        <option value="ME">Montenegro</option>
+                        <option value="MA">Morocco</option>
+                        <option value="MZ">Mozambique</option>
+                        <option value="MM">Myanmar</option>
+                        <option value="NA">Namibia</option>
+                        <option value="NR">Nauru</option>
+                        <option value="NP">Nepal</option>
+                        <option value="NL">Netherlands</option>
+                        <option value="NZ">New Zealand</option>
+                        <option value="NI">Nicaragua</option>
+                        <option value="NE">Niger</option>
+                        <option value="NG">Nigeria</option>
+                        <option value="NO">Norway</option>
+                        <option value="OM">Oman</option>
+                        <option value="PK">Pakistan</option>
+                        <option value="PW">Palau</option>
+                        <option value="PA">Panama</option>
+                        <option value="PG">Papua New Guinea</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Peru</option>
+                        <option value="PH">Philippines</option>
+                        <option value="PL">Poland</option>
+                        <option value="PT">Portugal</option>
+                        <option value="PR">Puerto Rico</option>
+                        <option value="QA">Qatar</option>
+                        <option value="RO">Romania</option>
+                        <option value="RU">Russia</option>
+                        <option value="RW">Rwanda</option>
+                        <option value="WS">Samoa</option>
+                        <option value="SM">San Marino</option>
+                        <option value="SA">Saudi Arabia</option>
+                        <option value="SN">Senegal</option>
+                        <option value="RS">Serbia</option>
+                        <option value="SC">Seychelles</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile</label>
+                    <input type="number" id="mobile" placeholder="Mobile">
+                </div>
+                <div class="form-group">
+                    <label for="std-code">STD Code</label>
+                    <input type="text" id="std-code" placeholder="STD Code">
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="new-tax-regime">
+                    <label for="new-tax-regime">New Tax Regime</label>
+                </div>
+                <div class="form-group">
+                    <label for="pan-no">PAN No</label>
+                    <input type="text" id="pan-no" placeholder="PAN No">
+                </div>
+                <div class="form-group">
+                    <label for="aadhar-no">Aadhar No</label>
+                    <input type="number" id="aadhar-no" placeholder="Aadhar No">
+                </div>
+                <div class="form-group">
+                    <label for="languages-known">Languages Known</label>
+                    <input type="text" id="languages-known" placeholder="Languages Known">
+                </div>
+                <div class="form-group">
+                    <label for="caste">Caste</label>
+                    <input type="text" id="caste" placeholder="Caste">
+                </div>
+                <div class="form-group">
+                    <label for="passport-id">Passport ID</label>
+                    <input type="text" id="passport-id" placeholder="Passport ID">
+                </div>
+                <div class="form-group">
+                    <label for="mother-name">Mother Name</label>
+                    <input type="text" id="mother-name" placeholder="Mother Name">
+                </div>
+                <div class="form-group">
+                    <label for="marital-status">Marital Status</label>
+                    <select id="marital-status">
+                        <option value="">Select</option>
+                        <option value="MA">Married</option>
+                        <option value="UM">Unmarried</option>
+                        <option value="SI">Sigle</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date-of-anniversary">Date Of Anniversary</label>
+                    <input type="date" id="date-of-anniversary">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="emergency-no">EmergencyNo</label>
+                    <input type="tel" id="emergency-no" placeholder="EmergencyNo">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" placeholder="Phone">
+                </div>
+                <div class="form-group">
+                    <label for="name-on-pan">Name On PAN</label>
+                    <input type="text" id="name-on-pan" placeholder="Name On PAN">
+                </div>
+                <div class="form-group">
+                    <label for="name-on-aadhar">Name On Aadhaar</label>
+                    <input type="text" id="name-on-aadhar" placeholder="Name On Aadhaar">
+                </div>
+                <div class="form-group">
+                    <label for="religion">Religion</label>
+                    <select id="religion">
+                        <option value="">Select</option>
+                        <option value="HI">HINDU</option>
+                        <option value="SI">SIKH</option>
+                        <option value="CH">Christan</option>
+                        <option value="JA">Jain</option>
+                        <option value="MU">Muslim</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="blood-group">Blood Group</label>
+                    <input type="text" id="blood-group" placeholder="Blood Group">
+
+                </div>
+                <div class="form-group">
+                    <label for="passport-expiry-date">Passport Expiry Date</label>
+                    <input type="date" id="passport-expiry-date">
+                </div>
+
+                <div class="address-section">
+                    <h3>Permanent Address</h3>
+                    <div class="form-group">
+                        <label for="perm-address1">Address 1</label>
+                        <input type="text" id="perm-address1" value="">
+                        <label for="perm-address2">Address 2</label>
+                        <input type="text" id="perm-address2" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="perm-address3">Address 3</label>
+                        <input type="text" id="perm-address3" placeholder="">
+                        <label for="perm-city">City</label>
+                        <input type="text" id="perm-city" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="perm-district">District</label>
+                        <input type="text" id="perm-district" value="">
+                        <label for="perm-pin">Pin</label>
+                        <input type="text" id="perm-pin" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="perm-state">State</label>
+                        <select id="perm-state">
+                            <option value="">Select a state or UT</option>
+                            <option value="AP">Andhra Pradesh</option>
+                            <option value="AR">Arunachal Pradesh</option>
+                            <option value="AS">Assam</option>
+                            <option value="BR">Bihar</option>
+                            <option value="CG">Chhattisgarh</option>
+                            <option value="GA">Goa</option>
+                            <option value="GJ">Gujarat</option>
+                            <option value="HR">Haryana</option>
+                            <option value="HP">Himachal Pradesh</option>
+                            <option value="JH">Jharkhand</option>
+                            <option value="KA">Karnataka</option>
+                            <option value="KL">Kerala</option>
+                            <option value="MP">Madhya Pradesh</option>
+                            <option value="MH">Maharashtra</option>
+                            <option value="MN">Manipur</option>
+                            <option value="ML">Meghalaya</option>
+                            <option value="MZ">Mizoram</option>
+                            <option value="NL">Nagaland</option>
+                            <option value="OR">Odisha</option>
+                            <option value="PB">Punjab</option>
+                            <option value="RJ">Rajasthan</option>
+                            <option value="SK">Sikkim</option>
+                            <option value="TN">Tamil Nadu</option>
+                            <option value="TS">Telangana</option>
+                            <option value="TR">Tripura</option>
+                            <option value="UP">Uttar Pradesh</option>
+                            <option value="UK">Uttarakhand</option>
+                            <option value="WB">West Bengal</option>
+                            <option value="AN">Andaman and Nicobar Islands</option>
+                            <option value="CH">Chandigarh</option>
+                            <option value="DN">Dadra and Nagar Haveli and Daman and Diu</option>
+                            <option value="DL">Delhi</option>
+                            <option value="JK">Jammu and Kashmir</option>
+                            <option value="LA">Ladakh</option>
+                            <option value="LD">Lakshadweep</option>
+                            <option value="PY">Puducherry</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="address-section">
+                    <h3>Present Address</h3>
+                    <div class="form-group">
+                        <label for="present-address1">Address 1</label>
+                        <input type="text" id="present-address1" value="">
+                        <label for="present-address2">Address 2</label>
+                        <input type="text" id="present-address2" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="present-address3">Address 3</label>
+                        <input type="text" id="present-address3" placeholder="">
+                        <label for="present-city">City</label>
+                        <input type="text" id="present-city" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="present-district">District</label>
+                        <input type="text" id="present-district" value="">
+                        <label for="present-pin">Pin</label>
+                        <input type="text" id="present-pin" value="">
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="same-as-permanent">
+                        <label for="same-as-permanent">Make Present Address As Permanent?</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="present-state">State</label>
+                        <select id="present-state">
+                            <option value="maharashtra" selected>select</option>
+                            <option value="">Select a state or UT</option>
+                            <option value="AP">Andhra Pradesh</option>
+                            <option value="AR">Arunachal Pradesh</option>
+                            <option value="AS">Assam</option>
+                            <option value="BR">Bihar</option>
+                            <option value="CG">Chhattisgarh</option>
+                            <option value="GA">Goa</option>
+                            <option value="GJ">Gujarat</option>
+                            <option value="HR">Haryana</option>
+                            <option value="HP">Himachal Pradesh</option>
+                            <option value="JH">Jharkhand</option>
+                            <option value="KA">Karnataka</option>
+                            <option value="KL">Kerala</option>
+                            <option value="MP">Madhya Pradesh</option>
+                            <option value="MH">Maharashtra</option>
+                            <option value="MN">Manipur</option>
+                            <option value="ML">Meghalaya</option>
+                            <option value="MZ">Mizoram</option>
+                            <option value="NL">Nagaland</option>
+                            <option value="OR">Odisha</option>
+                            <option value="PB">Punjab</option>
+                            <option value="RJ">Rajasthan</option>
+                            <option value="SK">Sikkim</option>
+                            <option value="TN">Tamil Nadu</option>
+                            <option value="TS">Telangana</option>
+                            <option value="TR">Tripura</option>
+                            <option value="UP">Uttar Pradesh</option>
+                            <option value="UK">Uttarakhand</option>
+                            <option value="WB">West Bengal</option>
+                            <option value="AN">Andaman and Nicobar Islands</option>
+                            <option value="CH">Chandigarh</option>
+                            <option value="DN">Dadra and Nagar Haveli and Daman and Diu</option>
+                            <option value="DL">Delhi</option>
+                            <option value="JK">Jammu and Kashmir</option>
+                            <option value="LA">Ladakh</option>
+                            <option value="LD">Lakshadweep</option>
+                            <option value="PY">Puducherry</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="details-section">
+                    <h3>Bank Details</h3>
+                    <div class="form-group">
+                        <label for="bank-ac-number">Bank A/C Number</label>
+                        <input type="text" id="bank-ac-number" placeholder="Bank A/C Number">
+                        <label for="name-on-bank">Name On Bank</label>
+                        <input type="text" id="name-on-bank" placeholder="Name On Bank">
+                    </div>
+                    <div class="form-group">
+                        <label for="ifsc-code">IFSC Code</label>
+                        <input type="text" id="ifsc-code" placeholder="IFSC Code">
+                        <label for="bank-branch-code">Bank Branch Code</label>
+                        <input type="text" id="bank-branch-code" placeholder="Bank Branch Code">
+                    </div>
+                    <div class="form-group">
+                        <label for="bank-branch-name">Bank Branch Name</label>
+                        <input type="text" id="bank-branch-name" placeholder="Bank Branch Name">
+                        <label for="bank-address">Bank Address</label>
+                        <input type="text" id="bank-address" placeholder="Bank Address">
+                    </div>
+                </div>
+
+                <div class="details-section">
+                    <h3>Other Details</h3>
+                    <div class="form-group">
+                        <label for="esic-doctor">ESIC Doctor</label>
+                        <input type="text" id="esic-doctor" placeholder="ESIC Doctor">
+                        <label for="esic-doctor-code">ESIC Doctor Code</label>
+                        <input type="text" id="esic-doctor-code" placeholder="ESIC Doctor Code">
+                    </div>
+                    <div class="form-group">
+                        <label for="dispensary">Dispensary</label>
+                        <input type="text" id="dispensary" placeholder="Dispensary">
+                        <label for="lic-no">LIC No</label>
+                        <input type="text" id="lic-no" placeholder="LIC No">
+                    </div>
+                    <div class="form-group">
+                        <label for="lic-sum">LIC Sum</label>
+                        <input type="text" id="lic-sum" placeholder="LIC Sum">
+                        <label for="lic-premium">LIC Premium</label>
+                        <input type="text" id="lic-premium" placeholder="LIC Premium">
+                    </div>
+                    <div class="form-group">
+                        <label for="previous-service">Previous Service</label>
+                        <input type="text" id="previous-service" placeholder="Previous Service">
+                        <label for="qualification">Qualification</label>
+                        <input type="text" id="qualification" placeholder="Qualification">
+                    </div>
+                    <div class="form-group">
+                        <label for="reference-name">Reference Name</label>
+                        <input type="text" id="reference-name" placeholder="Reference Name">
+                        <label for="reference-relation">Reference Relation</label>
+                        <input type="text" id="reference-relation" placeholder="Reference Relation">
+                    </div>
+                    <div class="form-group">
+                        <label for="ref-contact-no">Ref. Contact No.</label>
+                       
+                            <input type="number" id="HRA%" placeholder="HRA ">
+                    </div>
+                </div>
+            </form>
+            </form>
+        </div>
+
+        <div class="tab-content" id="family-details">
+            <h2>Family Details</h2>
+            <form>
+                <div class="form-container">
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-row">
+                        <label for="gender">Gender</label>
+                        <select id="gender">
+                            <option value="">--Select--</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="contact">Contact No</label>
+                        <input type="text" id="contact" placeholder="Contact No">
+                    </div>
+                    <div class="form-row">
+                        <label for="address1">Address 1</label>
+                        <input type="text" id="address1" placeholder="Address Line 1">
+                    </div>
+                    <div class="form-row">
+                        <label for="address2">Address 2</label>
+                        <input type="text" id="address2" placeholder="Address Line 2">
+                    </div>
+                    <div class="form-row">
+                        <label for="address3">Address 3</label>
+                        <input type="text" id="address3" placeholder="Address Line 3">
+                    </div>
+                    <div class="form-row">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" placeholder="Date Of Birth">
+                    </div>
+                    <div class="form-row checkbox-label">
+                        <label></label>
+                        <input type="checkbox" id="residing"> <label for="residing">Residing With Him/Her</label>
+                    </div>
+                    <div class="form-row">
+                        <label for="relationship">Relationship</label>
+                        <select id="relationship">
+                            <option value="">--Select Relation--</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="income">Yearly Income</label>
+                        <input type="number" id="income" placeholder="0">
+                    </div>
+                    <div class="form-row">
+                        <label for="education">Education</label>
+                        <input type="text" id="education" placeholder="Education">
+                    </div>
+                    <div class="form-row">
+                        <label for="religion">Religion</label>
+                        <select id="religion">
+                            <option value="">--Select Religion--</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="fatherHusband">Father/Husband Name</label>
+                        <input type="text" id="fatherHusband" placeholder="Father/Husband Name">
+                    </div>
+                    <div class="form-row">
+                        <label for="identification">Identification Mark</label>
+                        <input type="text" id="identification" placeholder="Identification Mark">
+                    </div>
+                    <div class="form-row checkbox-label">
+                        <label></label>
+                        <input type="checkbox" id="esicNominee"> <label for="esicNominee">Nominee For ESIC</label>
+                    </div>
+                    <div class="form-row">
+                        <label for="esicNominationDate">ESIC Nomination Date</label>
+                        <input type="date" id="esicNominationDate" placeholder="ESIC Nominate Date">
+                    </div>
+                    <div class="form-row">
+                        <label for="esicCancDate">ESIC Canc. Date</label>
+                        <input type="date" id="esicCancDate" placeholder="ESIC Nomination Cancellation Date">
+                    </div>
+                    <div class="form-row checkbox-label">
+                        <label>Nominee For</label>
+                        <input type="checkbox" id="epf"> <label for="epf">EPF</label>
+                    </div>
+                    <div class="form-row">
+                        <label for="epfPercentage">EPF%</label>
+                        <input type="number" id="epfPercentage" placeholder="0">
+                    </div>
+                    <div class="form-row checkbox-label">
+                        <label></label>
+                        <input type="checkbox" id="eps"> <label for="eps">EPS</label>
+                    </div>
+                    <div class="form-row">
+                        <label for="epsPercentage">EPS%</label>
+                        <input type="number" id="epsPercentage" placeholder="0">
+                    </div>
+                    <div class="form-row checkbox-label">
+                        <label></label>
+                        <input type="checkbox" id="fpf"> <label for="fpf">FPF</label>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <div class="form-row checkbox-label">
+                        <label>Nominee For</label>
+                        <input type="checkbox" id="epf"> <label for="epf">EPF</label>
+                    </div>
+                    <div class="form-row">
+                        <label for="epfPercentage">EPF%</label>
+                        <input type="number" id="epfPercentage" placeholder="0">
+                    </div>
+                    <div class="form-row">
+                        <label for="ppfPercentage">PPF%</label>
+                        <input type="number" id="ppfPercentage" placeholder="0">
+                    </div>
+                    <div class="form-row">
+                        <label for="pfCancDate">PF Canc. Date</label>
+                        <input type="date" id="pfCancDate" placeholder="PF Nomination Cancellation Date">
+                    </div>
+                    <div class="form-row checkbox-label">
+                        <label></label>
+                        <input type="checkbox" id="gratuityNominee"> <label for="gratuityNominee">Nominee For Gratuity</label>
+                    </div>
+                    <div class="form-row checkbox-label">
+                        <label></label>
+                        <input type="checkbox" id="minor"> <label for="minor">Minor</label>
+                    </div>
+                    <div class="form-row">
+                        <label for="guardian">Guardian</label>
+                        <input type="text" id="guardian" placeholder="Guardian">
+                    </div>
+                    <div class="form-row file-upload">
+                        <label for="uploadPhoto">Upload Photo</label>
+                        <input type="file" id="uploadPhoto">
+                        <button class="delete-btn">Delete</button>
+                        <button class="upload-btn">Upload</button>
+                    </div>
+                    <div class="form-row">
+                        <label for="remarks">Remarks</label>
+                        <input type="text" id="remarks" placeholder="Remarks">
+                    </div>
+                    <div class="form-row checkbox-label">
+                        <label></label>
+                        <input type="checkbox" id="eps"> <label for="eps">EPS</label>
+                    </div>
+                    <div class="form-row">
+                        <label for="epsPercentage">EPS%</label>
+                        <input type="number" id="epsPercentage" placeholder="0">
+                    </div>
+                    <div class="form-row">
+                        <label for="pfNominationDate">PF Nomination Date</label>
+                        <input type="date" id="pfNominationDate" placeholder="PF Nomination Date">
+                    </div>
+                    <div class="form-row">
+                        <label for="pfCancReason">PF Canc. Reason</label>
+                        <input type="text" id="pfCancReason" placeholder="Reason For PF Nomination Cancellation">
+                    </div>
+                    <div class="form-row">
+                        <label for="gratuityPercentage">Gratuity%</label>
+                        <input type="number" id="gratuityPercentage" placeholder="0">
+                    </div>
+                    <div class="form-row">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" placeholder="0">
+                    </div>
+                    <div class="form-row">
+                        <label for="guardianRelationship">Guardian Relationship</label>
+                        <input type="text" id="Guardian Relationship" placeholder="Enter the Gurdian Relationship">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="tab-content" id="previous-company-details">
+            <h2>Previous Company Details</h2>
+            <form>
+                <div class="container">
+                    <div class="form-container">
+                        <div class="form-group">
+                            <label for="companyName">Company Name</label>
+                            <input type="text" id="companyName" placeholder="Company Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactNo">Contact No</label>
+                            <input type="text" id="contactNo" placeholder="Contact No">
+                        </div>
+                        <div class="form-group">
+                            <label for="doj">DOJ</label>
+                            <input type="text" id="doj" placeholder="DOJ">
+                        </div>
+                        <div class="form-group">
+                            <label for="reason">Reason</label>
+                            <input type="text" id="reason" placeholder="Reason">
+                        </div>
+                        <div class="form-group">
+                            <label for="uan">UAN</label>
+                            <input type="text" id="uan" placeholder="UAN">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" placeholder="Address">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPerson">Contact Person</label>
+                            <input type="text" id="contactPerson" placeholder="Contact Person">
+                        </div>
+                        <div class="form-group">
+                            <label for="designation">Designation</label>
+                            <input type="text" id="designation" placeholder="Designation">
+                        </div>
+                        <div class="form-group">
+                            <label for="dol">DOL</label>
+                            <input type="text" id="dol" placeholder="DOL">
+                        </div>
+                        <div class="form-group">
+                            <label for="salary">Salary</label>
+                            <input type="text" id="salary" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="pfNo">PF No</label>
+                            <input type="text" id="pfNo" placeholder="PF No">
+                        </div>
+                        
+                    </div>
+            </form>
+        </div>
+
+        <div class="tab-content" id="education-qualification-details">
+            <h2>Education Qualification Details</h2>
+            <form>
+                <div class="container">
+                    <div class="form-container">
+                        <div class="form-group">
+                            <label for="education">Education</label>
+                            <input type="text" id="education" placeholder="Education Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="institution">Institution</label>
+                            <input type="text" id="institution" placeholder="Institution/Board">
+                        </div>
+                        <div class="form-group">
+                            <label for="fromDate">From Date</label>
+                            <input type="text" id="fromDate" placeholder="From Date">
+                        </div>
+                        <div class="form-group">
+                            <label for="toDate">To Date</label>
+                            <input type="text" id="toDate" placeholder="To Date">
+                        </div>
+                        <div class="form-group">
+                            <label for="marks">Marks%</label>
+                            <input type="text" id="marks" value="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="grade">Grade</label>
+                            <input type="text" id="grade" placeholder="Grade">
+                        </div>
+                        <div class="form-group">
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="tab-content" id="attach-documents">
+            <h2>Attach Documents</h2>
+            <form>
+                
+            </form>
+        </div>
+    </div>
+
+    <script src="Profile.js"></script>
+</body>
+
+</html>

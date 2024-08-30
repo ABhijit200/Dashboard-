@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query SAffo</title>
+    <link rel="stylesheet" href="Query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="title">Enter Your Query</span>
+            <div class="buttons">
+                <button class="save"><i class="fa fa-save"></i>Save</button>
+                <button class="clear"><i class="fa fa-eraser"></i>Clear</button>
+                <button class="refresh"><i class="fa fa-refresh"></i>Refresh</button>
+                <button class="exit"><i class="fa fa-window-close"></i>Exit</button>
+            </div>
+        </div>
+        <div class="form">
+            <form>
+                <label class="">From Date</label>
+                <input type="date" id="txtFrDate"
+                    class="form-control ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-maxlength"
+                    maxlength="10" placeholder="dd/MM/yyyy" isrequired="Y" validateasdate="Y"
+                    msg="Please Enter From Date">
+
+                <label for="toDate">To Date</label>
+                <input type="date" id="txtToDate" ng-model="EmpQry_Ent.ToDate"
+                    class="form-control ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-maxlength"
+                    maxlength="10" placeholder="dd/MM/yyyy" isrequired="Y" validateasdate="Y"
+                    msg="Please Enter To Date">
+
+                <label for="Query">Query</label>
+                <textarea id="txtQry" ng-model="EmpQry_Ent.Qry" rows="5"
+                    class="form-control ng-pristine ng-valid ng-empty ng-touched" placeholder="Query" isrequired="Y"
+                    msg="Please Enter Your Query"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+
+          
+        </div>
+    </div>
+   
+</body>
+
+</html>

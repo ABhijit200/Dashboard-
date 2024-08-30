@@ -1,0 +1,25 @@
+.card {
+    transition: all 0.3s ease;
+    height: 100%;
+  }
+  .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+  .card-header {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .text-bg-primary {
+    background-color: #007bff !important;
+  }
+  .text-bg-primary:hover {
+    background-color: #0056b3 !important;
+  }
+  .full-width-card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .bottom-cards {
+    margin-top: 20px;
+  }

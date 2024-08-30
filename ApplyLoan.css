@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.loan-application {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.loan-application h2 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group .required {
+    color: red;
+}
+
+.form-group input,
+.form-group select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-actions {
+    margin-top: 20px;
+}
+
+.form-actions .btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.btn.save {
+    background-color: #28a745;
+}
+
+.btn.refresh {
+    background-color: #17a2b8;
+}
+
+.btn.close {
+    background-color: #dc3545;
+}
+
+.btn.history {
+    background-color: #007bff;
+}
+
+.loan-description {
+    margin-top: 20px;
+}
+
+.loan-description table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.loan-description th,
+.loan-description td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.loan-description th {
+    background-color: #007bff;
+    color: #fff;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Exit Request Application</title>
+    <link rel="stylesheet" href="Off-Boarding.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Employee Exit Request Application</h1>
+            <button class="exit-button"><i class="fa fa-window-close"></i> Exit</button>
+        </div>
+        <form class="exit-form">
+            <h2 class="Employee">Employee Exit Information</h2>
+            <div class="form-group">
+                <label for="employeeCode">Employee Code</label>
+                <input type="text" id="employeeCode" name="employeeCode" required>
+            </div>
+            <div class="form-group">
+                <label for="lastWorkingDate">Last Working Date (LWD)</label>
+                <input type="date" id="lastWorkingDate" name="lastWorkingDate" required>
+            </div>
+            <div class="form-group">
+                <label for="attachDocuments">Attach Documents</label>
+                <input type="file" id="attachDocuments" name="attachDocuments">
+            </div>
+            <div class="form-group">
+                <label for="reasonForLeaving">Reason for Leaving</label>
+                <textarea id="reasonForLeaving" name="reasonForLeaving" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Submit / Save</button>
+        </form>
+    </div>
+</body>
+</html>
